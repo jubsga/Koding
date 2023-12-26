@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Source+Code+Pro:wght@200;300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .imagens {
+    @apply rounded-md shadow-md shadow-slate-400 dark:shadow-none w-[10rem] h-[10rem] object-cover hover:opacity-70 hover:scale-95 active:scale-90
+  };
+  .active {
+    @apply ring-4 ring-green-500 opacity-80 scale-95
+  }
+  .title{
+    @apply text-2xl font-semibold mb-3
+  }
+  .colorHTML{
+    @apply text-[#E87635]
+  }
+  .colorCSS{
+    @apply text-[#438ADD]
+  }
+  .colorJS{
+    @apply text-[#E8BE2A]
+  }
+  .colorPHP{
+    @apply text-[#6E35E8]
+  }
+}
+
+* {
+  transition: all 0.1s linear;
+  box-sizing: border-box;
+  font-family: "Poppins" !important;
+  user-select: none;
+}
+
+::selection {
+  background-color: #2bb0a1;
+  color: #fff;
+}
+
+.Toastify__toast-body div {
+  font-family: "Poppins" !important;
+}
